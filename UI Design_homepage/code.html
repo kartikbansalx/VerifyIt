@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#c0c1ff",
+                    "on-tertiary-fixed-variant": "#6900b3",
+                    "secondary": "#4cd7f6",
+                    "error": "#ffb4ab",
+                    "error-container": "#93000a",
+                    "on-primary-fixed-variant": "#2f2ebe",
+                    "on-error-container": "#ffdad6",
+                    "surface-bright": "#31394d",
+                    "primary-container": "#8083ff",
+                    "primary": "#c0c1ff",
+                    "surface-container": "#171f33",
+                    "outline-variant": "#464554",
+                    "surface-variant": "#2d3449",
+                    "on-secondary-fixed": "#001f26",
+                    "on-surface": "#dae2fd",
+                    "surface-container-low": "#131b2e",
+                    "surface-container-high": "#222a3d",
+                    "background": "#0b1326",
+                    "inverse-primary": "#494bd6",
+                    "on-background": "#dae2fd",
+                    "secondary-container": "#03b5d3",
+                    "on-secondary-fixed-variant": "#004e5c",
+                    "secondary-fixed": "#acedff",
+                    "outline": "#908fa0",
+                    "secondary-fixed-dim": "#4cd7f6",
+                    "on-tertiary-container": "#400071",
+                    "inverse-surface": "#dae2fd",
+                    "tertiary": "#ddb7ff",
+                    "surface": "#0b1326",
+                    "tertiary-container": "#b76dff",
+                    "on-primary-container": "#0d0096",
+                    "on-surface-variant": "#c7c4d7",
+                    "on-error": "#690005",
+                    "primary-fixed": "#e1e0ff",
+                    "on-primary-fixed": "#07006c",
+                    "inverse-on-surface": "#283044",
+                    "tertiary-fixed-dim": "#ddb7ff",
+                    "surface-tint": "#c0c1ff",
+                    "on-tertiary": "#490080",
+                    "on-tertiary-fixed": "#2c0051",
+                    "on-secondary": "#003640",
+                    "surface-container-highest": "#2d3449",
+                    "on-primary": "#1000a9",
+                    "tertiary-fixed": "#f0dbff",
+                    "surface-dim": "#0b1326",
+                    "on-secondary-container": "#00424e",
+                    "surface-container-lowest": "#060e20"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "margin-desktop": "48px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "display": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #020617; }
+        .glass-card {
+            background: rgba(23, 31, 51, 0.4);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .mesh-gradient {
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(76, 215, 246, 0.1) 0px, transparent 50%);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface mesh-gradient min-h-screen selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/40 backdrop-blur-lg border-b border-white/10 shadow-[0_4px_30px_rgba(99,102,241,0.15)] font-['Plus_Jakarta_Sans'] antialiased">
+<div class="flex justify-between items-center px-8 h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold tracking-tight text-white">Academic Ledger</span>
+<div class="hidden md:flex gap-6">
+<a class="text-indigo-400 border-b-2 border-indigo-500 pb-1 font-label-sm text-label-sm" href="#">Dashboard</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:bg-white/5 rounded-lg font-label-sm text-label-sm px-2" href="#">Verify</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:bg-white/5 rounded-lg font-label-sm text-label-sm px-2" href="#">Credentials</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:bg-white/5 rounded-lg font-label-sm text-label-sm px-2" href="#">About</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="primary-gradient text-white px-6 py-2 rounded-lg font-label-sm text-label-sm active:scale-95 duration-150 transition-all shadow-lg shadow-indigo-500/20">Connect Wallet</button>
+<div class="w-8 h-8 rounded-full bg-surface-variant overflow-hidden border border-white/10">
+<img alt="User avatar" data-alt="A high-quality 3D rendered avatar of a professional academic user with minimalist features, set against a soft indigo background that complements the glassmorphism theme of the platform. The style is clean, modern, and friendly, using a palette of deep slate and vibrant indigo to maintain brand consistency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa4fI8dYV5f3k-QCzmB8n9hZGE1OQ5VpGc7DC8QHC5-s4nLc1ej1Xh1d50kNE-Qo5XMnQK-ePXXsbdzWSafqJxffi3tHK0QyRaay6pvQ42KgLC4WwQoBM3vFKrAFR-NmqZeI2_QdoMF3VxMrNBugLuxryNzzwfkhvdLDXLotjTokuyg2sjegJGtuJZFdvgJODbm_tRnlkwnDo1f0VPf5NYkHxeLGDWYcneNUXjpW6PwHT4X9RnRM03_wP5ph3qKRZBf-_uC6LGWYzW"/>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="flex flex-col items-center text-center mb-24 relative">
+<div class="absolute -top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/10 blur-[120px] rounded-full -z-10"></div>
+<div class="inline-flex items-center gap-2 px-4 py-1.5 glass-card rounded-full mb-8">
+<span class="flex h-2 w-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Secured by Ethereum Protocol</span>
+</div>
+<h1 class="font-display text-display text-white max-w-4xl mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60">
+                Verify Academic Certificates Instantly
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12">
+                Secure, tamper-proof academic credentials powered by blockchain technology. Ensure the integrity of certifications with immutable distributed ledger records.
+            </p>
+<div class="flex flex-wrap justify-center gap-6">
+<button class="primary-gradient text-white px-10 py-4 rounded-xl font-headline-md text-headline-md shadow-[0_0_40px_rgba(99,102,241,0.3)] hover:scale-105 transition-transform duration-300 flex items-center gap-3">
+<span class="material-symbols-outlined" data-icon="workspace_premium">workspace_premium</span>
+                    Issue Certificate
+                </button>
+<button class="glass-card text-white px-10 py-4 rounded-xl font-headline-md text-headline-md hover:bg-white/10 transition-all duration-300 flex items-center gap-3 border border-white/20">
+<span class="material-symbols-outlined" data-icon="fact_check">fact_check</span>
+                    Verify Certificate
+                </button>
+</div>
+</section>
+<!-- Bento Grid Features -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-32">
+<div class="md:col-span-8 glass-card p-10 rounded-[2rem] overflow-hidden relative group">
+<div class="relative z-10">
+<div class="flex items-center gap-4 mb-6">
+<div class="p-3 bg-primary/10 rounded-xl text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="account_balance">account_balance</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-white">Institutional Trust</h3>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-md">
+                        Join over 500+ global universities and accreditation bodies using the Academic Ledger protocol to prevent credential fraud.
+                    </p>
+<div class="flex -space-x-4">
+<img class="w-12 h-12 rounded-full border-4 border-slate-950" data-alt="A series of minimalist institutional logo avatars representing global prestige and academic excellence. The logos are rendered in a monochromatic style with slight indigo tints, appearing floating and overlapping to signify a network of trust. The background is a dark, glassmorphic texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXvu9w3FgNMfhZ3tz2aHgmYvm8rfhjaak1QwJkLfIF0LXQRDN9LKAbFA9v54EWOrzovXmNFEAHIKgaPJ7qZW6fk1DvaAydGuRiXUEagzKLp9RPimDlrkN6PnFVYjXkae9c5wxtXIUokA2_Ncijj5X8K1t-hnzVbKFts38Qdyr-upk7p3W89ZEVlKGXu5gqLoGw_TFD2zuiKb8055zmPfoGQ6LztTwT-g6ql5fq5rm1naDfL12dBgW9VlAXHosj_lt9ffL7kGtbBOI7"/>
+<img class="w-12 h-12 rounded-full border-4 border-slate-950" data-alt="A series of minimalist institutional logo avatars representing global prestige and academic excellence. The logos are rendered in a monochromatic style with slight indigo tints, appearing floating and overlapping to signify a network of trust. The background is a dark, glassmorphic texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYSXUVMoFR3d_mEOdecSl4-KacRGl6zaCI6c2J6yfOBX9Y2z8smyltLeYj86J71Gt4LVBkqvCMEd2H7iTc6voFNJVwZICmLhOHYE3dk-fT4DQNcWHqb6np1htELb-VJjhA3e2HuNI51IXOBPtDykAdJY8q8mOjboHUrodanQWgW_s_x47AVeiCLPXFkOEATwItGZ5npZ3W9ilw22bDoc2fTIhRHL-wB3E99RUw4ku4Bpb-t9lrNLE9wAaAYO97IFHO-bl28F-7tvFW"/>
+<img class="w-12 h-12 rounded-full border-4 border-slate-950" data-alt="A series of minimalist institutional logo avatars representing global prestige and academic excellence. The logos are rendered in a monochromatic style with slight indigo tints, appearing floating and overlapping to signify a network of trust. The background is a dark, glassmorphic texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXb7TOQRLqve1lQqMnTZ0Cko2JbIVhmEp1yQp6n86RhO7-LjxZXRcs7JDgnIwQC6aio1lIwIETluKh71a_T3ygcsu-I51zNb7p9dOEPACKvZ0Vhv772QBPPyNtul5mYBOa7vVrfOpg_uGdNKhmMuASBGyEDhNG0tXOoyzY1di6STXU2_K97b_WqcrKn2eW23kAj3uCrLVgamrWJP6GMlO0JrNkbxxy9iQ3rfRFhewmAGVYyfQoNral7CEBKp-Tk7iiadsJaxQ9Si6Z"/>
+<div class="w-12 h-12 rounded-full border-4 border-slate-950 bg-surface-container-high flex items-center justify-center text-label-sm font-label-sm">+497</div>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-1/2 h-full -z-0 opacity-20 group-hover:opacity-40 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="A sophisticated abstract background featuring smooth flowing lines and gradients in deep indigo and cyan. The lighting is low and atmospheric, emphasizing depth through soft shadows and glowing edges, perfectly aligning with the premium blockchain and academic validation aesthetic of the platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg9cy5UHJeFmM4jjSW9a97E5DAI8HrkXsylkcAoO0ttbhxZJaOT7Pg_i3toi80ilprcfM9sdGDoZLoUp6iVsQUZGA732WXPhXOIf0l_sSkpXYYHGOPbrUhYGLELo7iLq258ozbQMQH4Du8aRzLXFM19khFNCoGO2cCuRWojlr_YBAIuMQVOBLw9mEfF9nOdxyPOluToCsxBP-geiL5dodOEhJiHDcl8YicZ3bcGxXPTRMZeHAxm9D0jsgpu0YLRSedwghrJU64MbIa"/>
+</div>
+</div>
+<div class="md:col-span-4 glass-card p-10 rounded-[2rem] flex flex-col justify-between">
+<div class="p-3 bg-secondary/10 rounded-xl text-secondary w-fit mb-6">
+<span class="material-symbols-outlined text-4xl" data-icon="qr_code_scanner">qr_code_scanner</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-white mb-4">Instant Scan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Every certificate includes a unique, encrypted QR code for immediate offline verification.
+                    </p>
+</div>
+</div>
+<div class="md:col-span-4 glass-card p-10 rounded-[2rem]">
+<div class="p-3 bg-tertiary/10 rounded-xl text-tertiary w-fit mb-6">
+<span class="material-symbols-outlined text-4xl" data-icon="lock">lock</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white mb-4">Tamper Proof</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Utilizing Merkle trees and cryptographic hashing to ensure certificates can never be altered.
+                </p>
+</div>
+<div class="md:col-span-8 glass-card p-1 rounded-[2rem] flex flex-col md:flex-row items-center">
+<div class="p-10 md:w-1/2">
+<h3 class="font-headline-lg text-headline-lg text-white mb-4">Immutable Timeline</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Trace the chain of custody from issuance to verification in real-time.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 text-secondary">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+<span class="text-label-sm font-label-sm">BLOCK #19284 VERIFIED</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant/40">
+<span class="material-symbols-outlined" data-icon="pending">pending</span>
+<span class="text-label-sm font-label-sm">WAITING FOR CONSENSUS...</span>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 h-64 md:h-full p-4">
+<div class="w-full h-full glass-card border-none rounded-2xl bg-white/5 flex items-center justify-center">
+<img class="w-full h-full object-cover rounded-xl" data-alt="A detailed close-up of a digital blockchain visualization with glowing nodes and connecting lines. The colors are deep blues, indigos, and bright cyan highlights, creating a high-tech sense of security and transparency. The lighting is dramatic, with light streaks suggesting fast data processing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjvBZMvoj5i7ZUY67dKYk1yQk9ZOkjOn0E8hF3KepxBaelCBQOls9XJtCGvMFYmzi8uWGliMQiqxu4jz2arpAvVLMed7AN188gOD42JyLzfR2uZi-v46_wp2iEd4ccG32F5UtmLN-kQUblAFhOZ6C24rx8xpsBN1wE7lMFErJHVaWXB-xh626RZauQBihKe1RntwJTYGKmU2I-IdV8Tmbj0em-w8Q5xksyZqGLVrX12uePVXf28DPljLdf_Dxp7BVLzW95NyXt46iV"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Document Preview -->
+<section class="mb-32">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-white mb-4">The Digital Standard</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Designed for prestige, engineered for permanence.</p>
+</div>
+<div class="max-w-4xl mx-auto glass-card p-2 rounded-[2.5rem] shadow-[0_40px_100px_rgba(0,0,0,0.5)]">
+<div class="bg-white p-12 md:p-20 rounded-[2.2rem] text-slate-900 relative">
+<!-- Security Overlay -->
+<div class="absolute inset-0 border-[20px] border-slate-100/50 pointer-events-none rounded-[2.2rem]"></div>
+<div class="flex justify-between items-start mb-16">
+<div>
+<h4 class="font-bold text-slate-400 tracking-widest text-xs uppercase mb-2">Academic Record</h4>
+<p class="font-display text-4xl text-slate-900">Certificate of Completion</p>
+</div>
+<img class="w-16 h-16 rounded-xl" data-alt="A geometric abstract logo mark for Academic Ledger. The logo uses interlocking lines to form a shield shape, representing security and validation. The primary colors are a gradient of royal indigo to electric cyan against a clean white background, conveying a sense of established authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU9fJel2L5SWkqssx1A5XQEcmCwKSCjKEcVUwHrJgPCLCpJ-rnHuzOKoYpDSILqXf1CkBi4CbaryQQ6PYZFlFmIHrZw2bXEy85QBDmV6tz1PIfi8vA2l1rxiKuxXXS2ZT-7TRlKBZ8rgmOspNfu6lZyemCxNKO6j9MxVQWLN9b4vX6kLVUxWgSex-CZ9Cp2Sy80szFIoenhkdgZ4mFnEJqdp7KiHU_1RAJ4Jy3r1pKuHllD6VgMcYIUshhejXebv7sq4vIompAwQ8O"/>
+</div>
+<div class="mb-12">
+<p class="text-slate-500 mb-2">This is to certify that</p>
+<h5 class="text-3xl font-bold mb-4">ALEXANDER R. VANDERGRIFT</h5>
+<p class="text-slate-500 leading-relaxed max-w-lg">
+                            has successfully fulfilled all requirements for the Professional Degree in 
+                            <span class="text-slate-900 font-semibold italic">Blockchain Architecture &amp; Smart Contract Audit</span>
+                            granted on this day, September 14, 2024.
+                        </p>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-end pt-12 border-t border-slate-100 gap-8">
+<div class="space-y-4">
+<div class="flex items-center gap-3 px-4 py-2 bg-slate-50 rounded-lg">
+<span class="material-symbols-outlined text-indigo-600" data-icon="fingerprint">fingerprint</span>
+<span class="text-[10px] font-mono text-slate-400 truncate w-48">TX: 0x71C7656EC7ab88b098defB751B7401B5f6d8976F</span>
+</div>
+<div class="flex items-center gap-3 px-4 py-2 bg-slate-50 rounded-lg">
+<span class="material-symbols-outlined text-emerald-600" data-icon="verified_user">verified_user</span>
+<span class="text-[10px] font-bold text-slate-700">VERIFIED ON ETHEREUM MAINNET</span>
+</div>
+</div>
+<div class="bg-white p-2 border border-slate-100 rounded-xl">
+<img class="w-24 h-24 grayscale opacity-80" data-alt="A clean, scannable QR code presented in a minimal square format with slightly rounded corners. It is framed by a thin slate-colored border, positioned elegantly on a white certificate paper background. The overall aesthetic is professional, modern, and highly legible." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEep_aSy5vaeWoDi8l4P9cY35_9ra5cYhHCam36ePDc74TJz5pYJCCMSSBdZrYlKbMCV1S_d0OnY6YWAIFl7CubSlIROwzywb-78tJQXBdJIM3sJAABPpdFAJpbDSwF8dEX-j3ROvwoevK17hGV8kBcN9yljwEQR-lWX4I3fd4hne5sQhraxz0GT73FEdcYfpxl1Vnovhwl_c2Ozu-3SjsXmo45AfnFsDUQpZwepObwqavsiIz74nn2LiFL6RSlJr-PnYeSmpOsTaU"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-white/5 bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto gap-4">
+<div class="flex flex-col gap-2">
+<span class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-slate-500">© 2024 Academic Ledger. Secured by Ethereum.</span>
+</div>
+<div class="flex gap-8">
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-slate-500 hover:text-indigo-400 transition-colors" href="#">Terms of Service</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-slate-500 hover:text-indigo-400 transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-slate-500 hover:text-indigo-400 transition-colors" href="#">Protocol Documentation</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-slate-500 hover:text-indigo-400 transition-colors" href="#">API</a>
+</div>
+</div>
+</footer>
+</body></html>
