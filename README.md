@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src=".github/assets/banner.svg" alt="VerifyIt Banner" width="100%" />
-
 <br/>
 
 # 🛡️ VerifyIt
@@ -99,24 +97,24 @@ flowchart LR
 <tr>
 <td align="center" width="50%">
 <b>🏠 Home / Landing</b><br/><br/>
-<em>Screenshots/home_DAVCS.png</em>
+Screenshots/home_DAVCS.png
 <br/><br/>
 </td>
 <td align="center" width="50%">
 <b>📤 Issue Certificate</b><br/><br/>
-<em>Screenshots/Issue_DAVCS.png</em>
+Screenshots/Issue_DAVCS.png
 <br/><br/>
 </td>
 </tr>
 <tr>
 <td align="center" width="50%">
 <b>✅ Issue Result</b><br/><br/>
-<em>Screenshots/ISSUE2_DAVCS.png</em>
+Screenshots/ISSUE2_DAVCS.png
 <br/><br/>
 </td>
 <td align="center" width="50%">
 <b>🔍 Verify Certificate</b><br/><br/>
-<em>Screenshots/Verify_DAVCS.png</em>
+Screenshots/Verify_DAVCS.png
 <br/><br/>
 </td>
 </tr>
