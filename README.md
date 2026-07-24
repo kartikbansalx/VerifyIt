@@ -97,24 +97,24 @@ flowchart LR
 <tr>
 <td align="center" width="50%">
 <b>🏠 Home / Landing</b><br/><br/>
-Screenshots/home_DAVCS.png
+(Screenshots/home_DAVCS.png)
 <br/><br/>
 </td>
 <td align="center" width="50%">
 <b>📤 Issue Certificate</b><br/><br/>
-Screenshots/Issue_DAVCS.png
+(Screenshots/Issue_DAVCS.png)
 <br/><br/>
 </td>
 </tr>
 <tr>
 <td align="center" width="50%">
 <b>✅ Issue Result</b><br/><br/>
-Screenshots/ISSUE2_DAVCS.png
+(Screenshots/ISSUE2_DAVCS.png)
 <br/><br/>
 </td>
 <td align="center" width="50%">
 <b>🔍 Verify Certificate</b><br/><br/>
-Screenshots/Verify_DAVCS.png
+(Screenshots/Verify_DAVCS.png)
 <br/><br/>
 </td>
 </tr>
