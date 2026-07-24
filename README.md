@@ -87,39 +87,49 @@ flowchart LR
 
 <div align="center">
 
-<!--
-  Add your interface screenshots below — recommended size ~1200x750px.
-  Example:
-  <img src=".github/assets/screenshot-home.png" width="90%" alt="Home Page" />
--->
+
+<p align="center">
+  <img src="./Screenshots/home_DAVCS.png" alt="Home Page" width="90%">
+</p>
+
+<p align="center">
+  <img src="./Screenshots/Issue_DAVCS.png" alt="Issue Certificate" width="90%">
+</p>
+
+<p align="center">
+  <img src="./Screenshots/ISSUE2_DAVCS.png" alt="Issue Certificate Form" width="90%">
+</p>
+
+<p align="center">
+  <img src="./Screenshots/Verify_DAVCS.png" alt="Verify Certificate" width="90%">
+</p>
 
 <table>
 <tr>
 <td align="center" width="50%">
 <b>🏠 Home / Landing</b><br/><br/>
-(Screenshots/home_DAVCS.png)
+<em>📸 Add screenshot here</em>
 <br/><br/>
 </td>
 <td align="center" width="50%">
 <b>📤 Issue Certificate</b><br/><br/>
-(Screenshots/Issue_DAVCS.png)
+<em>📸 Add screenshot here</em>
 <br/><br/>
 </td>
 </tr>
 <tr>
 <td align="center" width="50%">
-<b>✅ Issue Result</b><br/><br/>
-(Screenshots/ISSUE2_DAVCS.png)
+<b>🔍 Verify Certificate</b><br/><br/>
+<em>📸 Add screenshot here</em>
 <br/><br/>
 </td>
 <td align="center" width="50%">
-<b>🔍 Verify Certificate</b><br/><br/>
-(Screenshots/Verify_DAVCS.png)
+<b>✅ Verification Result</b><br/><br/>
+<em>📸 Add screenshot here</em>
 <br/><br/>
 </td>
 </tr>
 </table>
-
 </div>
 
 ---
