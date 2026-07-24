@@ -104,33 +104,7 @@ flowchart LR
   <img src="./Screenshots/Verify_DAVCS.png" alt="Verify Certificate" width="90%">
 </p>
 
-<table>
-<tr>
-<td align="center" width="50%">
-<b>🏠 Home / Landing</b><br/><br/>
-<em>📸 Add screenshot here</em>
-<br/><br/>
-</td>
-<td align="center" width="50%">
-<b>📤 Issue Certificate</b><br/><br/>
-<em>📸 Add screenshot here</em>
-<br/><br/>
-</td>
-</tr>
-<tr>
-<td align="center" width="50%">
-<b>🔍 Verify Certificate</b><br/><br/>
-<em>📸 Add screenshot here</em>
-<br/><br/>
-</td>
-<td align="center" width="50%">
-<b>✅ Verification Result</b><br/><br/>
-<em>📸 Add screenshot here</em>
-<br/><br/>
-</td>
-</tr>
-</table>
-</div>
+
 
 ---
 
