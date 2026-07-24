@@ -104,6 +104,7 @@ flowchart LR
   <img src="./Screenshots/Verify_DAVCS.png" alt="Verify Certificate" width="90%">
 </p>
 
+</div>
 
 
 ---
